@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Information Gathering</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        #name{
+            background-color: #fdba74;
+        }
+        #body{
+            background-color: #fb7185;
+        }
+        
+    </style>
+</head>
+<body class="font-serif bg-blue-500" id="body">
+    <nav class="bg-gray-900 py-4">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex justify-between">
+            <div class="flex">
+              <a href="#" class="text-white font-bold text-xl">Ethical Hacking Tools</a>
+            </div>
+            <div>
+              <a href="index.html" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-blue-900 mt-4 lg:mt-0">Home</a>
+              &nbsp;&nbsp;
+              <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-400">
+                About
+              </a>    
+</div>
+          </div>
+        </div>
+      </nav>
+<br>
+<h1 class="text-5xl text-center font-bold">Wireless Network Tools</h1>
+<main class="container mx-auto my-8">
+    <marquee><h2 class="mb-4 text-center font-bold text-3xl text-white">*****Caution: Remember to always use these tools ethically and with Permission! *****</h2></marquee>
+   
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Reaver</h2>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+    <p class="mb-4 bg-white rounded-lg">Reaver is a free and open-source tool for testing the security of wireless networks by attempting to recover the WiFi password through a brute-force attack on the WPS (Wi-Fi Protected Setup) PIN. It works by sending a series of PINs to the access point or router until the correct one is found. Reaver is primarily designed to work against WPS-enabled wireless access points and is used to test the strength of WPS PINs.</p>
+    </div>
+    <div class="w-full lg:w-1/6">
+       <a href="https://www.kali.org/tools/reaver/"> <img src="assets/reaver-logo.svg" alt="John the Ripper" class="w-full rounded-lg shadow-lg"> </a>
+    </div>
+    </div>
+    <p class="mb-4 font-semibold">Reaver is a command-line tool and can be used on Linux and Unix operating systems. Here's an example command to run Reaver:</p>
+    <pre class="bg-black text-white p-4 rounded-lg"><code>reaver -i wlan0mon -b 00:01:02:03:04:05 -vv    </code></pre>
+   
+    <p class="mb-4">In this example, "wlan0mon" is the name of the wireless interface, "00:01:02:03:04:05" is the MAC address of the target access point, and "-vv" enables verbose output. The tool then starts brute-forcing the WPS PIN to gain access to the network. It's important to note that Reaver should only be used on networks that you have permission to test.</p>
+ 
+  <br>
+
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Kismet</h2>
+    <p class="mb-4 bg-white rounded-lg">
+        Kismet is a free and open-source wireless network detector, sniffer, and intrusion detection system. It can detect wireless networks and devices in its range and passively collect information from them, such as SSID, MAC address, signal strength, and channel.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+       <p> Kismet supports various wireless network interfaces, including Wi-Fi, Bluetooth, and Zigbee. It can also be used with GPS receivers to record the location of detected networks and devices. </p>
+       <br>
+       <p>Kismet can be used for various purposes, such as network discovery, network monitoring, network troubleshooting, and wireless security auditing. It can also be integrated with other tools and systems, such as IDS/IPS, SIEM, and network management systems.</p>
+   <br>
+   <p>To use Kismet, you need to install it on a Linux or BSD system and configure it to use a compatible wireless network interface. You can then start Kismet and use its web-based or command-line interface to view and analyze the collected data. Kismet also provides various options and plugins to customize its functionality and output.</p>
+    </div>
+    <div class="w-full lg:w-1/5">
+       <a href="https://www.kismetwireless.net/"> <img src="assets/kismet-logo.svg" alt="Kismet" class="w-full rounded-lg shadow-lg"> </a>
+    </div>
+    </div>
+    <br>
+    <hr>    
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Wifite</h2>
+    <p class="mb-4 bg-white rounded-lg">Wifite is an open-source tool used for auditing and attacking wireless networks. It is designed to automate wireless network auditing, including cracking of WEP and WPA keys, and features automatic scanning and capturing of WPA handshakes. Wifite uses a combination of different tools, including Aircrack-ng, Reaver, and Pyrit, to perform various wireless attacks.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+        <div class="w-full lg:w-4/5 bg-gray-300 rounded-lg">
+            <p class="mb-4">Wifite's usage is straightforward and user-friendly. It has a command-line interface that offers different options to perform attacks. To use Wifite, first, the user needs to ensure that the wireless network interface card is in monitor mode. Once that is done, the user can simply launch Wifite and choose the target network to attack. Wifite will then automatically perform a series of attacks to crack the WEP or WPA key. The user can also choose to attack a specific network using its BSSID.</p>
+  <br>  <p class="mb-4">It is important to note that Wifite should only be used on networks that the user has permission to test or audit, as unauthorized use of the tool may be illegal and considered unethical.</p>
+        </div>
+        <div class="w-full lg:w-1/6">
+            <a href="https://www.kali.org/tools/wifite/"> <img src="assets/wifite-logo.svg" alt="Hashcat" class="w-full rounded-lg shadow-lg"> </a>
+        </div>
+        </div>
+        
+    <br>
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">OpenWIPS-ng</h2>
+    <p class="mb-4 bg-white rounded-lg ">
+        OpenWIPS-ng is an open source Wireless Intrusion Prevention System (WIPS) framework that is designed to detect and prevent malicious activities on wireless networks. It provides real-time monitoring and can be used to detect rogue access points, unauthorized clients, and other potential security threats.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+        <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+    <p class="mb-4 rounded-lg ">
+        The tool can be used to monitor multiple wireless networks simultaneously and supports a range of wireless adapters. OpenWIPS-ng uses various detection techniques such as signature-based detection, anomaly detection, and statistical analysis to detect potential threats.</p>
+       <br>
+    <p>The tool has a web-based interface that allows users to view real-time statistics, configure settings, and manage alerts. It also provides the ability to generate reports and export data.</p> 
+   <br>
+   <p>OpenWIPS-ng can be used by security professionals and network administrators to secure wireless networks and prevent unauthorized access. It is available for free and can be installed on various operating systems including Linux and Windows.</p></div>
+    <div class="w-full lg:w-1/5">
+       <a href="https://openwips-ng.org/"> <img src="assets/openwips.svg" alt="OpenWIPS" class="w-full rounded-lg shadow-lg"> </a>
+    </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">EAPHammer</h2>
+    <p class="mb-4 bg-white rounded-lg">
+        EAPHammer is an open-source toolkit for performing targeted evil twin attacks against WPA2-Enterprise networks. The tool allows an attacker to bypass the mutual authentication process between a client and a server in a WPA2-Enterprise network.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+    <p class="mb-4">The tool works by creating a fake access point that emulates the target network and sends deauthentication packets to the target client, forcing it to disconnect from the legitimate access point and connect to the fake one. EAPHammer then performs a fake EAP authentication process with the target client and captures its credentials.</p><br>
+    <p>The usage of EAPHammer involves configuring the tool with the necessary information about the target network, including the EAP method and other network parameters. The tool provides a simple command-line interface for executing the attack and capturing the credentials. It also offers various advanced features such as the ability to automatically scan for available networks, perform target selection, and customize the attack parameters.</p>
+</div>
+<div class="w-full lg:w-1/6">
+    <a href="https://www.kali.org/tools/eaphammer/"><img src="assets/EAPHammer.svg" alt="EAPHammer" class="w-full rounded-lg shadow-lg"> </a>
+</div>
+    </div>
+    <br>
+    <hr>
+<br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Wifiphisher</h2>
+    <p class="mb-4 bg-white rounded-lg">Wifiphisher is a wireless network security tool that is used to launch phishing attacks against WiFi networks. The tool was created to demonstrate how easily users could be tricked into providing sensitive information such as login credentials over unsecured networks.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+        <p class="mb-4">Wifiphisher works by creating a fake access point and then tricking connected devices into connecting to it instead of the legitimate network. The tool then prompts the user to enter their login credentials, which are then captured by the attacker.</p>
+        <br>
+        <p class="mb-4">The usage of Wifiphisher involves identifying a target WiFi network, creating a fake access point with a similar SSID and security settings, and launching a phishing attack against connected devices. The tool offers various attack scenarios such as credential harvesting, advanced phishing attacks, and man-in-the-middle attacks. It is important to note that Wifiphisher should only be used for ethical hacking purposes with the owner's permission and not for illegal activities.</p>
+    </div>
+    <div class="w-full lg:w-1/5">
+       <a href="https://wifiphisher.org/"> <img src="assets/wifiphisher.png" alt="Wifiphisher" class="w-full rounded-lg shadow-lg"> </a>
+    </div>
+    </div>
+    <br>
+    <hr>
+<br>
+<h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Fluxion</h2>
+<p class="mb-4 bg-white rounded-lg">
+    Fluxion is an open-source wireless network security auditing tool. It automates the process of a fake Access Point (AP) impersonation and performs a Man-in-the-Middle (MITM) attack to extract the pre-shared key (PSK) password. It is mainly used for testing and demonstrating security weaknesses in wireless networks. Fluxion is capable of performing both passive and active scanning, and can crack WPA and WPA2 encryption methods. The tool is written in Bash and Python programming languages.</p>
+<div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+<div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+<p class="mb-4">To use Fluxion, the following steps can be taken:</p>
+<ol>
+<li>1.Download and install Fluxion on a Linux system.</li>
+<li>2.Run Fluxion and select the target wireless network to attack.</li>
+<li>3.Choose the attack method and wait for the target to connect to the fake AP.</li>
+<li>4.Extract the PSK password and access the target network.</li>
+</ol>
+</div>
+<div class="w-full lg:w-1/5">
+    <a href="https://en.kali.tools/?p=235"><img src="assets/FLUXION.jpg" alt="Bettercap" class="w-full rounded-lg shadow-lg"></a>
+</div>
+</div>
+<br>
+<br>
+    
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Bettercap</h2>
+    <p class="mb-4 bg-white rounded-lg">
+        Bettercap is a Swiss army knife for network attacks and monitoring. It is an open-source network utility that allows for network monitoring, injection, and manipulation. It can perform various functions such as ARP spoofing, DNS spoofing, and Man-in-the-middle attacks.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+    <p class="mb-4">Some of the main features of Bettercap include:</p>
+<ol>
+    <li>1.Full sniffing of HTTP/HTTPS/TLS traffic, with SSLsplit-like features.</li>
+    <li>2.Various sniffing modes to suit different needs.</li>
+    <li>3.Full IPv6 support.</li>
+    <li>4.ARP spoofing and ARP poisoning.</li>
+    <li>5.Network discovery and scanning.</li>
+    <li>6.Built-in packet editors and custom filters.</li>
+    <li>7.Session hijacking and cookie injection.</li>
+    <li>8.MITM proxy support.</li>
+</ol>
+    </div>
+    <div class="w-full lg:w-1/5">
+        <a href="https://www.bettercap.org/"><img src="assets/bettercap.png" alt="Bettercap" class="w-full rounded-lg shadow-lg"></a>
+    </div>
+    </div>
+<br>
+   
+</main>
+<footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto">
+        <p class="text-center"> Designed & Developed By Alle Aniesh Kumar
+          <br>
+          &copy; 2023 Ethical Hacking Tools. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
