@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Information Gathering</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        #name{
+            background-color: #fdba74;
+        }
+        #body{
+            background-color: #fb7185;
+        }
+        
+    </style>
+</head>
+<body class="font-serif bg-blue-500" id="body">
+    <nav class="bg-gray-900 py-4">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex justify-between">
+            <div class="flex">
+              <a href="#" class="text-white font-bold text-xl">Ethical Hacking Tools</a>
+            </div>
+            <div>
+              <a href="index.html" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-blue-900 mt-4 lg:mt-0">Home</a>
+              &nbsp;&nbsp;
+              <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-400">
+                About
+              </a>    
+</div>
+          </div>
+        </div>
+      </nav>
+<br>
+<h1 class="text-5xl text-center font-bold">Information Gathering Tools</h1>
+<main class="container mx-auto my-8">
+    <marquee><h2 class="mb-4 text-center font-bold text-3xl text-white">*****Caution: Remember to always use these tools ethically and with Permission! *****</h2></marquee>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Whois</h2>
+    
+    <p class="mb-4 bg-white rounded-lg">Whois is a protocol that allows you to look up information about domain names and IP addresses, including ownership, registration, and contact details. It is commonly used in information gathering and reconnaissance during ethical hacking.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 rounded-lg">
+    <p class="bg-gray-300 mb-4 font-semibold">To use the Whois tool, you can either use a web-based Whois lookup service, or use a command-line tool like the 'whois' command in Linux or Windows.
+    </p>
+    
+    <br>
+        <p class="mb-4 font-semibold bg-white rounded-lg">To perform a Whois lookup on a domain name or IP address using the command-line tool, open a terminal window and type the following command:</p>
+        <pre class="bg-black text-white p-4 rounded-lg"><code>whois example.com</code></pre>
+        <p class="mb-4">This will display the registration and contact details for the domain name 'example.com'. You can also use the '-h' option to specify the Whois server to use, if the default server is not suitable for your needs.</p>
+    </div>
+        <div class="w-full lg:w-1/5">
+            <a href="https://www.whois.com"><img src="assets/whois.webp" alt="whois" class="w-full rounded-lg shadow-lg"></a>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">FOCA</h2>
+    <p class="mb-4 bg-white rounded-lg">FOCA (Fingerprinting Organizations with Collected Archives) is a tool used to extract metadata and hidden information in documents and web pages. It is often used in information gathering and reconnaissance during ethical hacking.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+        Here's an example of how to use FOCA:</p>
+    <ol>
+        <li>1.Download and install FOCA on your computer.</li>
+        <li>2.Launch FOCA and enter the target domain you want to scan.</li>
+        <li>3.Configure the scan settings, such as the type of documents to search for and the depth of the scan.</li>
+        <li>4.Start the scan and wait for it to complete. FOCA will automatically retrieve any publicly accessible documents or web pages from the target domain.<li>
+        <li>5.Analyze the extracted metadata and use it to build a profile of the target organization or individual.</li>
+    </ol>
+    </div>
+    <div class="w-full lg:w-1/5">
+       <a href="https://foca.en.softonic.com/?ex=DINS-635.2"> <img src="assets/FOCA.png" alt=" Foca" class="w-full rounded-lg shadow-lg"> </a>
+    </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Maltego CE</h2>
+    <p class="mb-4 bg-white rounded-lg">Maltego CE (Community Edition) is a popular open-source tool used for information gathering and reconnaissance during ethical hacking. It allows users to visualize and understand complex relationships between different entities, such as organizations, people, and technologies, and can aid in identifying potential vulnerabilities and attack vectors.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+        Here's an example of how to use Maltego CE:</p>
+    <ol>
+        <li>1.Download and install Maltego CE on your computer.</li>
+        <li>2.Launch Maltego CE and create a new graph.</li>
+        <li>3.Add an entity to the graph, such as a domain or social media profile.</li>
+        <li>4.Select the entity and choose a transform from the Transform Hub to run on it. A transform is a pre-built script that queries a data source and retrieves information about the entity.</li>
+        <li>5.Wait for the transform to complete and view the results in the graph. Maltego CE will automatically add any new entities and relationships to the graph.</li>
+        <li>6.Repeat steps 4 and 5 with other entities in the graph to build a comprehensive view of the target.</li>
+    </ol>
+    </div>
+    <div class="w-full lg:w-1/5">
+        <a href="https://www.maltego.com/downloads/"><img src="assets/maltego.png" alt="MaltegoCE" class="w-full rounded-lg shadow-lg"></a>
+    </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">SpiderFoot</h2>
+    <p class="mb-4 bg-white rounded-lg">SpiderFoot is an open-source intelligence (OSINT) automation tool used for information gathering and reconnaissance. It automates the process of gathering intelligence about a target, including domains, IP addresses, email addresses, social media accounts, and more. It is designed to be used by both security professionals and non-technical users.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+        Here's an example of how to use SpiderFoot:</p>
+    <ol>
+        <li>1.Download and install SpiderFoot on your computer.</li>
+        <li>2.Launch SpiderFoot and create a new scan profile.</li>
+        <li>3.Configure the profile with your target information, including the domain name, IP address, or other relevant details.</li>
+        <li>4.Run the scan and wait for SpiderFoot to complete the reconnaissance process. This may take several minutes, depending on the size of your target and the depth of the scan.</li>
+        <li>5.Review the results in the SpiderFoot dashboard, which will show you a detailed report of the intelligence gathered.</li>
+        <li>6.Export the results to a CSV file or other format for further analysis or reporting.</li>
+    </ol>
+    </div>
+    <div class="w-full lg:w-1/5">
+       <a href="https://www.kali.org/tools/spiderfoot/"> <img src="assets/spiderfoot.jpeg" alt="SpiderFoot" class="w-full rounded-lg shadow-lg"> </a>
+    </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">The Harvester</h2>
+    <p class="mb-4 bg-white rounded-lg">The Harvester is an open-source intelligence (OSINT) tool used for gathering email addresses, subdomains, virtual hosts, open ports, banners, and employee names from different public sources like search engines and social media platforms. It is commonly used by penetration testers, security researchers, and cybercriminals for reconnaissance and information gathering.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+    <p class="mb-4">Here's an example of how to use The Harvester:</p>
+<ol>
+    <li>1.Download and install The Harvester on your computer.</li>
+    <li>2.Launch The Harvester and select the data sources you want to use for your search, such as Google, Bing, LinkedIn, or Twitter.</li>
+    <li>3.Configure your search options, including the domain or keyword you want to search for, the number of results to retrieve, and any other specific settings you want to use.</li>
+    <li>4.Run the search and wait for The Harvester to complete the process. This may take several minutes, depending on the size of your search and the number of data sources you selected.</li>
+    <li>5.Review the results in the output file generated by The Harvester, which will contain the email addresses, subdomains, or other information gathered during the search.</li>
+</ol>
+</div>
+<div class="w-full lg:w-1/5">
+    <a href="https://www.kali.org/tools/theharvester/"><img src="assets/harvester.png" alt="theharvester" class="w-full rounded-lg shadow-lg"> </a>
+</div>
+    </div>
+    <br>
+    <hr>
+<br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Recon-ng</h2>
+    <p class="mb-4 bg-white rounded-lg">Recon-ng is an open-source reconnaissance framework used for information gathering and reconnaissance during penetration testing or vulnerability assessment. It is designed to automate the process of gathering and analyzing information from various sources, such as search engines, social networks, and domain name systems (DNS).</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+        <p class="mb-4">Here's an example of how to use Recon-ng:</p>
+<ol>
+    <li>1.Download and install Recon-ng on your computer.</li>
+    <li>2.Launch Recon-ng and create a new workspace.</li>
+    <li>3.Add the relevant modules for your reconnaissance task, such as Google, LinkedIn, or Shodan.</li>
+    <li>4.Configure the modules by entering the relevant options, such as the domain or keyword you want to search for, the number of results to retrieve, and any other specific settings you want to use.</li>
+    <li>5.Run the modules and wait for Recon-ng to complete the process. This may take several minutes, depending on the size of your search and the number of modules you selected.</li>
+    <li>6.Review the results in the output file generated by Recon-ng, which will contain the information gathered during the reconnaissance.</li>
+</ol>
+    </div>
+    <div class="w-full lg:w-1/5">
+       <a href="https://www.kali.org/tools/recon-ng/"> <img src="assets/recon-ng-logo.svg" alt="Recon-ng" class="w-full rounded-lg shadow-lg"> </a>
+    </div>
+    </div>
+    <br>
+    <hr>
+<br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Google Dorks</h2>
+    <p class="mb-4 bg-white rounded-lg">Google dorks are advanced search operators that can be used to search Google for specific information that is not easily accessible through a regular search. These dorks allow users to perform more targeted searches to find sensitive information, such as usernames, passwords, email addresses, and other data that can be used in a cyber attack.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+    <p class="mb-4">Here are some examples of Google dorks and their usage:    </p>
+<ol>
+    <li>1.site:example.com intitle:"login" - This dork searches for login pages on the specified website.</li>
+    <li>2.filetype:pdf site:example.com - This dork searches for PDF files on the specified website.</li>
+    <li>3.intext:"username" site:example.com - This dork searches for pages on the specified website that contain the word "username".</li>
+    <li>4.inurl:"/admin.php" site:example.com - This dork searches for pages on the specified website that contain "/admin.php" in the URL.</li>
+    <li>5.site:example.com intitle:"index of" - This dork searches for open directories on the specified website.</li>
+</ol>
+    </div>
+    <div class="w-full lg:w-1/5">
+       <a href="https://www.exploit-db.com/google-hacking-database"> <img src="assets/google dork.png" alt="Google Dorks" class="w-full rounded-lg shadow-lg"> </a>
+    </div>
+    </div>
+    <br>
+    <hr>
+<br>
+    
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Metagoofil</h2>
+    <p class="mb-4 bg-white rounded-lg">Metagoofil is a tool used for extracting metadata from public documents (such as PDF, DOC, XLS, PPT, etc.) available on a target domain or IP address. The tool is useful for information gathering during penetration testing, vulnerability assessment, or red team engagements.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+    <p class="mb-4">Here are the steps to use Metagoofil:</p>
+<ol>
+    <li>1.Install Metagoofil on your system. It is available for Linux and Windows.</li>
+    <li>2.Open the terminal and navigate to the Metagoofil directory.</li>
+    <li>3.Run the command <pre class="bg-black text-white p-4 rounded-lg"><code>"python metagoofil.py -d [domain name] -t [filetype] -o [output directory] -l [limit]"</code></pre> to start the metadata extraction process. <br>Replace [domain name] with the target domain name or IP address, [filetype] with the file type you want to extract metadata from (e.g. pdf, doc, xls, etc.), [output directory] with the location where the extracted metadata will be saved, and [limit] with the maximum number of files to extract metadata from.</li>
+    <li>4.Wait for the tool to complete the metadata extraction process.</li>
+    <li>5.Analyze the extracted metadata to gather information about the target domain or IP address.</li>
+</ol>
+    </div>
+    <div class="w-full lg:w-1/5">
+        <a href="https://www.kali.org/tools/metagoofil/"><img src="assets/metagoofil.png" alt="Metagoofil" class="w-full rounded-lg shadow-lg"></a>
+    </div>
+    </div>
+<br>
+   
+</main>
+<footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto">
+        <p class="text-center"> Designed & Developed By Alle Aniesh Kumar
+          <br>
+          &copy; 2023 Ethical Hacking Tools. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

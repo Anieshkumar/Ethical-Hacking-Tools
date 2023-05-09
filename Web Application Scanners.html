@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Application Scanners</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        #name{
+            background-color: #fdba74;
+        }
+        #body{
+            background-color: #fb7185;
+        }
+        
+    </style>
+</head>
+<body class="font-serif bg-blue-500" id="body">
+    <nav class="bg-gray-900 py-4">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex justify-between">
+            <div class="flex">
+              <a href="#" class="text-white font-bold text-xl">Ethical Hacking Tools</a>
+            </div>
+            <div>
+              <a href="index.html" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-blue-900 mt-4 lg:mt-0">Home</a>
+              &nbsp;&nbsp;
+              <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-400">
+                About
+              </a>    
+</div>
+          </div>
+        </div>
+      </nav>
+<br>
+<h1 class="text-5xl text-center font-bold">Web Application Scanners</h1>
+<main class="container mx-auto my-8">
+    <marquee><h2 class="mb-4 text-center font-bold text-3xl text-white">*****Caution: Remember to always use these tools ethically and with Permission! *****</h2></marquee>
+
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">OWASP ZAP</h2>
+    
+    <p class="mb-4 bg-white rounded-lg">OWASP ZAP (Zed Attack Proxy) is an open-source web application security scanner and penetration testing tool. It is designed to help identify vulnerabilities in web applications during the development and testing phases. Some of its key features include automated scanning, spidering, and active and passive scanning.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 rounded-lg">
+    <p class="bg-gray-300 mb-4 font-semibold">To use ZAP, you can simply download and install it on your computer. Once installed, you can configure it to scan a particular web application by specifying the target URL. You can then initiate a scan and view the results in the ZAP dashboard, which will show any identified vulnerabilities and provide detailed information about them. ZAP also offers various reporting options, allowing you to export scan results in different formats such as HTML, XML, or JSON.
+    </p>
+    
+    <br>
+   </div>
+        <div class="w-full lg:w-1/6">
+            <a href="https://owasp.org/www-project-zap/"><img src="assets/owasp zap.png" alt="whois" class="w-full rounded-lg shadow-lg"></a>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Wapiti</h2>
+    
+    <p class="mb-4 bg-white rounded-lg">Wapiti is an open-source web application vulnerability scanner that is designed to identify security vulnerabilities in web applications. It is written in Python and can be used to test web applications written in a variety of languages, including PHP, ASP, JSP, and JavaScript.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 rounded-lg">
+    <p class="bg-gray-300 mb-4 font-semibold">Wapiti is a command-line tool that can perform a variety of tests on web applications, including SQL injection, cross-site scripting (XSS), file inclusion, and command injection. It can also be used to test for server-side vulnerabilities such as vulnerable server configurations, insecure file permissions, and misconfigured web servers.
+    </p>
+    
+    <br>
+        <p class="mb-4 font-semibold bg-white rounded-lg">To use Wapiti, you need to specify the target URL and any options you want to use. For example, to scan a website for SQL injection vulnerabilities, you would run the following command:</p>
+        <pre class="bg-black text-white p-4 rounded-lg"><code>wapiti http://example.com --scan=sql</code></pre>
+        <p class="mb-4">Wapiti will then crawl the website and test each input field for SQL injection vulnerabilities. The results of the scan will be displayed in the terminal, and can also be saved to a file for further analysis.</p>
+    </div>
+        <div class="w-full lg:w-1/5">
+            <a href="https://www.kali.org/tools/wapiti/"><img src="assets/wapiti-logo.svg" alt="Wapiti" class="w-full rounded-lg shadow-lg"></a>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Nikto</h2>
+    
+    <p class="mb-4 bg-white rounded-lg">Nikto is a free and open-source web server scanner that performs comprehensive tests against web servers to identify any potential vulnerabilities and security weaknesses. It is designed to be a fast and reliable scanner, capable of detecting over 6700 potentially dangerous files and programs. Nikto can be used for both manual and automated security testing of web applications and is popular among ethical hackers and penetration testers.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 rounded-lg">
+    <p class="bg-gray-300 mb-4 font-semibold">Usage of Nikto typically involves specifying the target web server's IP address or hostname, along with any additional options such as the port number or authentication credentials if necessary. The tool then performs a series of tests against the web server to identify any vulnerabilities, including outdated software versions, configuration errors, and common vulnerabilities such as SQL injection and cross-site scripting (XSS).
+    </p>
+    
+    <br>
+        <p class="mb-4 font-semibold bg-white rounded-lg">Here is an example usage of Nikto:</p>
+        <pre class="bg-black text-white p-4 rounded-lg"><code>nikto -h example.com -p 80</code></pre>
+        <p class="mb-4">This command tells Nikto to scan the web server at example.com on port 80. Additional options can be specified to customize the scan, such as enabling SSL scanning or using a specific plugin for vulnerability testing. The output of the scan is displayed in the terminal and can be saved to a file for later analysis.</p>
+    </div>
+        <div class="w-full lg:w-1/5">
+            <a href="https://www.kali.org/tools/nikto/"><img src="assets/nikto-logo.svg" alt="Nikto" class="w-full rounded-lg shadow-lg"></a>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Arachni</h2>
+    
+    <p class="mb-4 bg-white rounded-lg">Arachni is an open-source web application security scanner designed to detect security vulnerabilities in web applications. It supports a wide range of web application frameworks and technologies and provides a detailed analysis of potential security issues, including cross-site scripting (XSS), SQL injection, file inclusion, and others.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 rounded-lg">
+    <p class="bg-gray-300 mb-4 font-semibold">Arachni uses a modular framework that allows users to customize the scanning process and prioritize specific vulnerabilities. It also provides a user-friendly web interface and comprehensive reporting capabilities.
+    </p>
+    
+    <br>
+        <p class="mb-4 font-semibold bg-white rounded-lg">To use Arachni, you can download it from the official website and install it on your system. You can then use the command line interface to configure and launch scans on your target web application. The tool provides a range of configuration options, including specifying the target URL, setting custom headers, and selecting the types of vulnerabilities to scan for.</p>
+        <p class="mb-4">Overall, Arachni is a powerful web application scanner that provides advanced security analysis capabilities and can help identify potential vulnerabilities in web applications.</p>
+    </div>
+        <div class="w-full lg:w-1/5">
+            <a href="https://www.arachni-scanner.com/"><img src="assets/arachni.png" alt="Arachni" class="w-full rounded-lg shadow-lg"></a>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Vega</h2>
+    
+    <p class="mb-4 bg-white rounded-lg">Vega is an open-source web application scanner and testing platform that allows security testers to find vulnerabilities and security flaws in web applications. It provides automated tools to perform both black-box and grey-box testing, with a user-friendly interface that makes it easy to configure and customize tests.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+    <p class="mb-4 font-semibold">Here's an example of how to use Vega:<br>To start a basic scan of a web application using Vega, follow these steps:</p>
+    <ol>
+        <li>1.Launch Vega and create a new target by entering the URL of the web application you want to scan.</li>
+        <li>2.Configure the scan settings, such as the scan depth, maximum number of pages, and the types of vulnerabilities you want to detect.</li>
+        <li>3.Start the scan and wait for Vega to complete the analysis.</li>
+        <li>4.View the results of the scan in the dashboard and review any vulnerabilities detected.</li>
+        <li>5.Export the results in various formats, such as HTML or XML, for further analysis and reporting.</li>
+    </ol>
+    <p class="mb-4">Overall, Vega is a powerful and flexible web application scanner that is suitable for both beginners and advanced users. It is available for Windows, Linux, and macOS platforms.</p>
+  
+    </div>
+    <div class="w-full lg:w-1/5">
+       <a href="https://subgraph.com/vega/index.en.html"> <img src="assets/vega.jpg" alt="Vega" class="w-full rounded-lg shadow-lg"> </a>
+    </div>
+    </div>
+    <br>
+    <hr>
+<br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Skipfish</h2>
+    <p class="mb-4 bg-white rounded-lg">Skipfish is an open-source web application scanner that is designed to identify vulnerabilities in web applications. It works by sending a large number of HTTP requests to a target web application and analyzing the responses for any signs of vulnerabilities. Skipfish is known for its speed and efficiency, as it can scan a large number of web pages in a short amount of time.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+        <p class="mb-4">The tool is easy to use and is highly configurable, allowing users to customize the scans to their specific needs. It can also generate reports in various formats, making it easy for users to share their findings with others. Some of the vulnerabilities that Skipfish can detect include SQL injection, cross-site scripting (XSS), and file inclusion vulnerabilities.</p>
+<p class="mb-4">Skipfish can be used in a variety of contexts, including ethical hacking and penetration testing, as well as in security audits of web applications. It is available for use on Linux, Windows, and Mac OS X platforms.</p>
+    </div>
+    <div class="w-full lg:w-1/5">
+       <a href="https://www.kali.org/tools/skipfish/"> <img src="assets/skipfish-logo.svg" alt="Skipfish" class="w-full rounded-lg shadow-lg"> </a>
+    </div>
+    </div>
+    <br>
+    <hr>
+<br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">WebScarab</h2>
+    <p class="mb-4 bg-white rounded-lg">WebScarab is an open-source web application security testing tool written in Java. It is designed to intercept and modify HTTP and HTTPS traffic between a client and a web server to test for security vulnerabilities. It allows users to perform security testing for various web application vulnerabilities like session management, authentication, authorization, and more.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+    <p class="mb-4">WebScarab can be used to modify requests and responses, inject custom code, and test various attack vectors. It also has a number of built-in plugins for common testing scenarios, such as SQL injection and cross-site scripting (XSS) detection.
+<br><br>
+        To use WebScarab, you need to install it on your local machine and configure it to work with your web application. Once configured, you can start intercepting traffic between your web application and the client, and analyze and modify the traffic to identify potential security vulnerabilities. The tool provides a graphical interface for easy navigation and analysis of captured traffic.
+        </p>
+    </div>
+    <div class="w-full lg:w-1/5">
+       <a href="https://www.kali.org/tools/webscarab/"> <img src="assets/webscarab-logo.svg" alt="Webscarab" class="w-full rounded-lg shadow-lg"> </a>
+    </div>
+    </div>
+    <br>
+    <hr>
+<br>
+    
+<h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Ratproxy</h2>
+    
+<p class="mb-4 bg-white rounded-lg">Ratproxy is a passive web application security audit tool designed to transparently analyze legitimate, browser-driven interactions with web applications and produce a detailed security report. The tool works by intercepting and analyzing HTTP traffic between the user's browser and the web application being tested.</p>
+<div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+<div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+    
+<p class="mb-4"><b>Here's an example of how to use Ratproxy: </b><br><br>To use Ratproxy, you need to configure your browser to use a proxy that listens on a port on your machine, where Ratproxy will be running. Once the proxy is configured, you can start browsing the web application you want to test and Ratproxy will start capturing and analyzing the HTTP traffic.</p>
+<br>
+        <p class="mb-4 font-semibold bg-white rounded-lg">Here is an example of how to start Ratproxy on port 8080:</p>
+        <pre class="bg-black text-white p-4 rounded-lg"><code>ratproxy -p 8080</code></pre>
+</div>
+
+<div class="w-full lg:w-1/5">
+   <a href="https://code.google.com/archive/p/ratproxy/wikis/RatproxyDoc.wiki"> <img src="assets/ratproxy.png" alt="Ratproxy" class="w-full rounded-lg shadow-lg"> </a>
+</div>
+
+</div>
+<p class="mb-4">Once Ratproxy is running, you can access the report by opening a web browser and navigating to the URL http://localhost:8080/. This will display the report of vulnerabilities detected by Ratproxy during the web application audit.</p>
+   
+<br>
+   
+</main>
+<footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto">
+        <p class="text-center"> Designed & Developed By Alle Aniesh Kumar
+          <br>
+          &copy; 2023 Ethical Hacking Tools. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

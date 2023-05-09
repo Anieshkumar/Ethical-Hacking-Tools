@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Network Scanners</title>
+    <link href="styles/styles.css" rel="stylesheet">
+    <script src="scipts/Script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-serif bg-blue-500" id="body">
+    <nav class="bg-gray-900 py-4">
+        <div class="max-w-7xl mx-auto px-4">
+          <div class="flex justify-between">
+            <div class="flex">
+              <a href="#" class="text-white font-bold text-xl">Ethical Hacking Tools</a>
+            </div>
+            <div>
+              <a href="index.html" class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-blue-900 mt-4 lg:mt-0">Home</a>
+              &nbsp;&nbsp;
+              <a href="about.html" class="block mt-4 lg:inline-block lg:mt-0 text-white hover:text-gray-400">
+                About
+              </a>    
+</div>
+          </div>
+        </div>
+      </nav>
+<br>
+<h1 class="text-5xl text-center font-bold">Network Scanners</h1>
+<main class="container mx-auto my-8">
+    <marquee><h2 class="mb-4 text-center font-bold text-3xl text-white">*****Caution: Remember to always use these tools ethically and with Permission! *****</h2></marquee>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Nmap</h2>
+    
+    <p class="mb-4 bg-white rounded-lg">Nmap is a powerful network exploration tool that allows you to discover hosts and services on a computer network, as well as create a map of the network.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+    <p class="mb-4 font-semibold">Here's an example of how to use Nmap:</p>
+    <ol>
+        <li>1.Download and install Nmap on your computer.</li>
+        <li>2.Open a command prompt or terminal and enter the command: nmap [target]</li>
+        <li>3.Replace [target] with the IP address or hostname of the target network or host that you want to scan.</li>
+        <li>4.Optionally, you can specify additional scanning options, such as the types of scans to perform, the ports to scan, and the level of verbosity.</li>
+        <li>5.Press Enter to start the scan.</li>
+        <li>6.Once the scan is complete, Nmap will display the results in the command prompt or terminal.</li>
+    </ol>
+    </div>
+    <div class="w-full lg:w-1/4">
+        <img src="assets/nmap.jpg" alt="Nmap" class="w-full rounded-lg shadow-lg">
+    </div>
+    </div>
+
+    <br>
+        <p class="mb-4 font-semibold bg-white rounded-lg">Here's an example of a basic Nmap command:</p>
+        <pre class="bg-black text-white p-4 rounded-lg"><code>nmap 192.168.1.1</code></pre>
+        <p class="mb-4">This command will scan the host with IP address 192.168.1.1 for open ports and display the results in the command prompt or terminal.</p>
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Zenmap</h2>
+    <p class="mb-4 bg-white rounded-lg">Zenmap is a graphical user interface (GUI) for the Nmap network scanner, which is used to discover hosts and services on a computer network. It is a free and open-source tool that is available for Windows, Linux, and macOS.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+       <p class="font-semibold"> Here's an example of how to use Zenmap:</p><br>
+    <ol>
+        <li>1.Download and install Zenmap on your computer.</li>
+        <li>2.Open the Zenmap application.</li>
+        <li>3.In the "Target" field, enter the IP address or hostname of the target network or host that you want to scan.</li>
+        <li>4.Select the type of scan you want to perform from the "Profile" drop-down menu. For example, you could select the "Intense Scan" profile to perform a comprehensive scan of the target.<li>
+        <li>5.Optionally, you can set additional scanning options, such as the ports to scan, the level of verbosity, and the speed of the scan.</li>
+        <li>6.Click the "Scan" button to start the scan.</li>
+        <li>7.Once the scan is complete, Zenmap will display the results in the interface, where you can view them in various formats and perform further analysis.</li>
+    </ol>
+    </div>
+    <div class="w-full lg:w-1/5">
+        <img src="assets/zenmap.png" alt="zenmap" class="w-full rounded-lg shadow-lg">
+    </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Short IP Scanner</h2>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+        <div class="w-full lg:w-4/5 bg-gray-300 rounded-lg">
+    <p class="mb-4 bg-white rounded-lg">A Short IP Scanner is a tool used to scan a network for active hosts and IP addresses. It sends out ICMP echo requests (pings) to a range of IP addresses and waits for a response to determine which IP addresses are active and which are not.</p>
+    </div>
+    <div class="w-full lg:w-1/6">
+        <img src="assets/shortip.webp" alt="shortip" class="w-full rounded-lg shadow-lg">
+    </div>
+    </div>
+    <p class="mb-4 font-semibold">Usage example:</p>
+   
+        <pre class="bg-black text-white p-4 rounded-lg"><code>fping -g 192.168.1.0/24</code></pre>
+
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Advanced Port Scanner</h2>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+        <div class="w-full lg:w-4/5 rounded-lg">
+    <p class="mb-4 bg-white rounded-lg">Advanced Port Scanner is a free network scanner tool that is used to identify open ports on network devices and detect running services on those ports. It is a Windows-based tool that is easy to use and offers advanced features such as remote shutdown and Wake-on-LAN.</p>
+    <p class="mb-4">Usage example:</p>
+    <pre class="bg-black text-white p-4 rounded-lg"><code>c:\> AdvancedPortScanner.exe /host:192.168.0.1 /range:1-100 /export:c:\results.csv /profile:"My Scan Profile"    </code></pre>
+        </div>
+        <div class="w-full lg:w-1/6">
+            <img src="assets/advportscanner.jpg" alt="advanceportscanner" class="w-full rounded-lg shadow-lg">
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Wireshark</h2>
+    <p class="mb-4 bg-white rounded-lg">Wireshark is a free and open-source network protocol analyzer that can capture and display network traffic in real-time. It is a powerful tool for analyzing network traffic and identifying potential security vulnerabilities.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+    <p class="mb-4 font-semibold">Here's an example of how to use Wireshark:</p>
+<ol>
+    <li>1.Download and install Wireshark on your computer.</li>
+    <li>2.Open the program and select the network interface you want to capture traffic from.</li>
+    <li>3.Click the "Start" button to begin capturing network traffic.</li>
+    <li>4.Once the capture is complete, you can analyze the traffic in real-time or save it for later analysis.</li>
+    <li>5.Use the built-in filters and analysis tools to identify potential security vulnerabilities or performance issues.</li>
+</ol>
+    </div>
+    <div class="w-full lg:w-1/6">
+        <img src="assets/wireshark.webp" alt="wireshark" class="w-full rounded-lg shadow-lg">
+    </div>
+    </div>
+<br>
+    <p class="mb-4">Here's an example of a Wireshark filter expression:</p>
+    <pre class="bg-black text-white p-4 rounded-lg"><code>ip.addr == 192.168.0.1 && tcp.port == 80 </code></pre>
+    <p class="mb-4">This filter will capture only network traffic that is sent to or from the IP address 192.168.0.1 on port 80, which is the default port for HTTP traffic.</p>
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Angry IP Scanner</h2>
+    <p class="mb-4 bg-white rounded-lg">Angry IP Scanner is a fast and lightweight network scanner that can scan IP addresses and ports to identify active hosts and running services. It is a popular tool for network administrators and ethical hackers to perform network reconnaissance and identify potential security vulnerabilities.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+        <p class="mb-4 font-semibold">Here's an example of how to use Angry IP Scanner:</p>
+<ol>
+    <li>1.Download and install Angry IP Scanner on your computer.</li>
+    <li>2.Open the program and enter the IP address range you want to scan.</li>
+    <li>3.Configure any additional scanning options, such as the ports to scan or the timeout values.</li>
+    <li>4.Click the "Start" button to begin the scan.</li>
+    <li>5.Once the scan is complete, you can view the results in the program's interface or export them to a file.</li>
+</ol>
+    </div>
+    <div class="w-full lg:w-1/6">
+        <img src="assets/angryip.png" alt="angryip" class="w-full rounded-lg shadow-lg">
+    </div>
+    </div>
+</div>
+<br>
+    <p class="mb-4 font-semibold">Here's an example of an Angry IP Scanner command-line interface command:</p>
+    <pre class="bg-black text-white p-4 rounded-lg"><code>$ sudo angryipscanner -i 192.168.1.0/24 -p 22,80,443 -t 1000</code></pre>
+    <p class="mb-4">This command will scan the IP address range 192.168.1.0/24 (all addresses in the 192.168.1.x subnet) for hosts that have ports 22 (SSH), 80 (HTTP), or 443 (HTTPS) open. The `-t` option specifies a timeout value of 1000 milliseconds.</p>
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">OpenVas</h2>
+    <p class="mb-4 bg-white rounded-lg">OpenVAS (Open Vulnerability Assessment System) is a free and open-source vulnerability scanner that can be used to identify and prioritize security vulnerabilities in a network. It is often used by ethical hackers and security professionals to assess the security posture of a network and identify potential vulnerabilities before they can be exploited by attackers.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+    <p class="mb-4 font-semibold">Here's an example of how to use OpenVAS:</p>
+<ol>
+    <li>1.Download and install OpenVas on your computer.</li>
+    <li>2.Open the program and configure the target network or host that you want to scan.</li>
+    <li>3.Configure any additional scanning options, such as the types of vulnerabilities to scan for or the severity levels to prioritize.</li>
+    <li>4.Click the "Start Scan" button to begin the scan.</li>
+    <li>5.Once the scan is complete, you can view the results in the program's interface or export them to a file.</li>
+</ol>
+    </div>
+    <div class="w-full lg:w-1/4">
+        <img src="assets/openvas.png" alt="openvas" class="w-full rounded-lg shadow-lg">
+    </div>
+    </div>
+
+<br>
+    <p class="mb-4 font-semibold">Here's an example of a command-line interface command to start an OpenVAS scan:</p>
+    <pre class="bg-black text-white p-4 rounded-lg"><code>$ omp -u admin -w password -h 127.0.0.1 -p 9390 -T 10    </code></pre>
+    <p class="mb-4">This command will start an OpenVAS scan on the target host 127.0.0.1 on port 9390 using the default admin credentials (-u admin -w password). The `-T` option specifies the scan type, with 10 representing a full and comprehensive scan.</p>
+    <hr>
+    <br>
+    <h2 class="text-3xl font-bold mb-4 rounded-lg font-serif text-center" id="name">Nessus</h2>
+    <p class="mb-4 bg-white rounded-lg">Nessus is a commercial vulnerability scanner developed by Tenable Network Security that can be used to identify and prioritize security vulnerabilities in a network. It is widely used by organizations and security professionals to assess the security posture of a network and identify potential vulnerabilities before they can be exploited by attackers.</p>
+    <div class="container mx-auto px-4 flex flex-col lg:flex-row items-center justify-between">
+    <div class="w-full lg:w-3/4 bg-gray-300 rounded-lg">
+    <p class="mb-4 font-semibold">Here's an example of how to use Nessus:</p>
+<ol>
+    <li>1.Download and install Nessus on your computer.</li>
+    <li>2.Open the program and configure the target network or host that you want to scan.</li>
+    <li>3.Configure any additional scanning options, such as the types of vulnerabilities to scan for or the severity levels to prioritize.</li>
+    <li>4.Click the "Start Scan" button to begin the scan.</li>
+    <li>5.Once the scan is complete, you can view the results in the program's interface or export them to a file.</li>
+</ol>
+    </div>
+    <div class="w-full lg:w-2/5">
+        <img src="assets/nessus.png" alt="nessus" class="w-full rounded-lg shadow-lg">
+    </div>
+    </div>
+    
+<br>
+    <p class="mb-4 font-semibold">Here's an example of a command-line interface command to start a Nessus scan:</p>
+    <pre class="bg-black text-white p-4 rounded-lg"><code>$ nessuscli scan new "My Scan" -T "Target Networks" 192.168.1.0/24 -p 1-65535 </code></pre>
+    <p class="mb-4">This command will start a Nessus scan named "My Scan" that will scan the target network 192.168.1.0/24 for all ports (-p 1-65535).</p>
+</main>
+<footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto">
+        <p class="text-center"> Designed & Developed By Alle Aniesh Kumar
+          <br>
+          &copy; 2023 Ethical Hacking Tools. All Rights Reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
